@@ -1,19 +1,19 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const File = new mongoose.Schema(
   {
     title: {
       type: String,
-      required: true
+      required: true,
     },
     path: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   {
-    timestamps: true
-  }
+    timestamps: true,
+  },
 );
 
-module.exports = mongoose.model("File", File);
+module.exports = mongoose.model('File', File);
